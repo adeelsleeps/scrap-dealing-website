@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TV Scrap - S.T.E General Trading LLC</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    .srv-layout { display:grid; grid-template-columns:1fr 1fr; gap:5rem; align-items:start; }
+    .srv-img { border-radius:8px; overflow:hidden; height:420px; position:sticky; top:90px; }
+    .srv-img img { width:100%; height:100%; object-fit:cover; display:block; background:var(--bg3); }
+    .srv-check { list-style:none; display:flex; flex-direction:column; gap:10px; margin:1.2rem 0 2rem; }
+    .srv-check li { display:flex; align-items:flex-start; gap:10px; font-size:0.93rem; }
+    .types-section { background:var(--bg2); }
+    .types-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+    .type-item { background:#fff; border:1px solid var(--border); border-radius:6px; padding:1rem 1.2rem; text-align:center; font-size:0.88rem; font-weight:600; color:var(--text); box-shadow:var(--shadow); }
+    .other-services { background:var(--bg); }
+    .other-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+    .other-card { background:#fff; border:1px solid var(--border); border-radius:8px; padding:1.2rem 1.4rem; text-decoration:none; color:inherit; transition:border-color 0.25s, transform 0.25s; }
+    .other-card:hover { border-color:var(--green); transform:translateY(-2px); }
+    .other-card h4 { font-family:"Rajdhani",sans-serif; font-size:1rem; font-weight:700; color:var(--dark); margin-bottom:4px; }
+    .other-card p { font-size:0.82rem; color:var(--muted); }
+    @media(max-width:900px){ .srv-layout{grid-template-columns:1fr;} .srv-img{height:300px;position:static;} .types-grid{grid-template-columns:repeat(2,1fr);} .other-grid{grid-template-columns:1fr 1fr;} }
+    @media(max-width:580px){ .types-grid{grid-template-columns:1fr 1fr;} .other-grid{grid-template-columns:1fr;} }
+  </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body><div class="page-body">
+<!-- TOPBAR -->
+<div class="topbar" style="display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+  <div class="topbar-left" style="display:flex; flex-wrap:wrap; gap:12px; font-size:0.8rem;">
+    <a href="mailto:stegeneraltrading@gmail.com"><i class="fas fa-envelope"></i> stegeneraltrading@gmail.com</a>
+    <span style="color:rgba(255,255,255,0.3);">|</span>
+    <a href="tel:+971502262300" title="UAE"><img src="https://flagcdn.com/16x12/ae.png" alt="UAE" style="margin-right:4px;"> +971 50 226 2300</a>
+    <a href="tel:+6598688702" title="Singapore"><img src="https://flagcdn.com/16x12/sg.png" alt="SG" style="margin-right:4px;"> +65 9868 8702</a>
+    <a href="tel:+923332262224" title="Pakistan"><img src="https://flagcdn.com/16x12/pk.png" alt="PK" style="margin-right:4px;"> +92 333 226 2224</a>
+  </div>
+  <div class="topbar-right">
+    <a href="https://www.facebook.com/profile.php?id=61558077696163" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/stegeneraltrading?igsh=MWJrajJzOHhoN3BrZA%3D%3D" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+<nav id="navbar">
+  <a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+  <img src="Images/logo.png" alt="S.T.E General Trading LLC Logo" style="max-height: 55px; width: auto;" />
+</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+        <li class="nav-dropdown">
+      <a href="services.html">Services
+        <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </a>
+      <div class="dropdown-menu">
+        <a href="services.html"><i class="fas fa-list"></i> All Services</a>
+        <div class="dropdown-divider"></div>
+        <a href="service-laptop.html"><i class="fas fa-laptop"></i> Laptop Scrap</a>
+        <a href="service-desktop.html"><i class="fas fa-desktop"></i> Desktop Scrap</a>
+        <a href="service-cpu.html"><i class="fas fa-microchip"></i> CPU Scrap</a>
+        <a href="service-server.html"><i class="fas fa-server"></i> Server Scrap</a>
+        <a href="service-switches.html"><i class="fas fa-network-wired"></i> Switch Scrap</a>
+        <a href="service-printers.html"><i class="fas fa-print"></i> Printer Scrap</a>
+        <a href="service-photocopier.html"><i class="fas fa-copy"></i> Photocopier Scrap</a>
+        <a href="service-mobile.html"><i class="fas fa-mobile-alt"></i> Mobile Scrap</a>
+        <a href="service-tablet.html"><i class="fas fa-tablet-alt"></i> Tablet Scrap</a>
+        <a href="service-harddisk.html"><i class="fas fa-hdd"></i> Hard Disk Scrap</a>
+        <a href="service-camera.html"><i class="fas fa-camera"></i> Camera Scrap</a>
+        <a href="service-tv.html"><i class="fas fa-tv"></i> TV Scrap</a>
+        <a href="service-ewaste.html"><i class="fas fa-recycle"></i> E-Waste Scrap</a>
+      </div>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav" id="mobileNav">
+  <a href="index.html" onclick="closeMobileNav()">Home</a><a href="about.html" onclick="closeMobileNav()">About</a>
+  <span class="mob-section-label">Services</span>
+  <a href="services.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-list"></i> All Services</a>
+  <div class="mob-divider"></div>
+  <a href="service-laptop.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-laptop"></i> Laptop Scrap</a>
+  <a href="service-desktop.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-desktop"></i> Desktop Scrap</a>
+  <a href="service-cpu.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-microchip"></i> CPU Scrap</a>
+  <a href="service-server.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-server"></i> Server Scrap</a>
+  <a href="service-switches.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-network-wired"></i> Switch Scrap</a>
+  <a href="service-printers.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-print"></i> Printer Scrap</a>
+  <a href="service-photocopier.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-copy"></i> Photocopier Scrap</a>
+  <a href="service-mobile.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-mobile-alt"></i> Mobile Scrap</a>
+  <a href="service-tablet.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-tablet-alt"></i> Tablet Scrap</a>
+  <a href="service-harddisk.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-hdd"></i> Hard Disk Scrap</a>
+  <a href="service-camera.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-camera"></i> Camera Scrap</a>
+  <a href="service-tv.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-tv"></i> TV Scrap</a>
+  <a href="service-ewaste.html" class="mob-sub" onclick="closeMobileNav()"><i class="fas fa-recycle"></i> E-Waste Scrap</a>
+  <a href="contact.html" onclick="closeMobileNav()">Contact</a>
+</div>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> <a href="services.html">Services</a> <span>/</span> <span>TV Scrap Buyers</span></div>
+  <h1>TV <span>Scrap</span> Buyers</h1>
+  <p>We buy old, used and damaged TVs of all brands in bulk across UAE.</p>
+</div>
+
+<section>
+  <div class="srv-layout">
+    <div>
+      <div class="section-label">Service Details</div>
+      <h2 class="section-title">We Buy <span>In Bulk</span></h2>
+      <p style="color:var(--muted);margin-bottom:0.5rem;">S.T.E General Trading LLC is a leading TV Scrap buyer in the UAE. We purchase old, used, damaged, and non-functional TVs of all brands in bulk. Whether you have 50 TVs or 5,000, we provide a fast, hassle-free solution with competitive market prices.</p>
+      <ul class="srv-check">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>All brands accepted - Dell, HP, Lenovo, Apple, Asus, Acer and more</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Any condition - working, damaged, broken or non-functional</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Bulk quantities only - minimum 10 units</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Fast on-site assessment and same-day payment available</li>
+<li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Free pickup from your location across UAE</li>
+      </ul>
+      <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+        <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+        <a href="tel:+97150748259" class="btn-secondary">Call Now</a>
+      </div>
+    </div>
+    <div class="srv-img reveal">
+      <!-- Add your JPEG image here -->
+      <img src="images/TV Scrap.png" alt="TV scrap bulk UAE"/>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="service-details-card reveal">
+  <h2 class="main-title">Professional Television Scrap Services</h2>
+  <p class="main-desc">When you work with us, you'll benefit from a leading specialized team that deeply understands the wholesale market for large flat-screen TVs, LCDs, LEDs, and corporate displays. We continuously monitor global electronic recycling metal and component markets to ensure our direct payouts provide you the absolute highest return for your bulk scale disposal.</p>
+  
+  <div class="detail-group">
+    <h4>Transparent and Reliable Service</h4>
+    <p>Our corporate evaluation team is stationed across the UAE to safely answer and inspect your bulk assets, ensuring you are thoroughly informed before execution. From initial bulk inventory auditing to the final rapid payout, we deploy a strictly transparent acquisition structure that keeps your enterprise in final control.</p>
+  </div>
+  
+  <div class="detail-group">
+    <h4>Quick Assessments and Quotes</h4>
+    <p>If you are unsure of the lingering value locked within your retiring Television inventory, reach out immediately for an unbinding appraisal. We frequently dispatch experts on-site to estimate large volumes according to instantaneous market valuation, ensuring maximum transparency across any scale.</p>
+  </div>
+  
+  <div class="detail-group">
+    <h4>Tailored Bulk Solutions for Businesses</h4>
+    <p>We restrict our acquisition focus strictly to large enterprise organizations, data centers, regional offices, and bulk B2B suppliers. By focusing exclusively on enormous volumes, we vastly streamline logistical overhead - translating perfectly into significantly higher payouts and faster pickup schedules for your business.</p>
+  </div>
+  
+  <div class="detail-group">
+    <h4>Trusted Disposal Provider in the UAE Market</h4>
+    <p>Backed by over a decade of verified operational experience covering Sharjah, Dubai, and Abu Dhabi, we have cultivated a spotless operational reputation. Operating ethically directly translates to eco-friendly compliance and strict environmental adherence, safely recycling your obsolete large flat-screen TVs, LCDs, LEDs, and corporate displays effectively.</p>
+  </div>
+</section>
+
+<div class="notice-box" style="margin:60px 6% 60px;">
+  <h4>Important Notice</h4>
+  <p>S.T.E General Trading LLC deals <strong>exclusively in bulk quantities</strong>. We do NOT purchase individual or small quantities (1-2 units). We serve businesses, offices, data centers and organizations with <strong>large volumes of equipment</strong>.</p>
+</div>
+
+<section class="other-services">
+  <div style="text-align: center; display: flex; flex-direction: column; align-items: center; margin-bottom: 1.5rem;">
+    <div class="section-label" style="justify-content: center; margin-bottom: 10px;">Explore More</div>
+    <h2 class="section-title" style="margin-bottom: 0;">Related <span>Services</span></h2>
+  </div>
+  <div class="other-grid">
+    <a href="service-desktop.html" class="other-card"><h4>Desktop &amp; CPU Scrap</h4><p>Desktop PCs and workstations in bulk.</p></a>
+    <a href="service-laptop.html" class="other-card"><h4>Laptop Scrap</h4><p>Old laptops of all brands in bulk.</p></a>
+    <a href="service-server.html" class="other-card"><h4>Network Servers</h4><p>Data center server decommissions.</p></a>
+    <a href="service-mobile.html" class="other-card"><h4>Mobile Phone Scrap</h4><p>Bulk mobile scrap from businesses.</p></a>
+    <a href="service-switches.html" class="other-card"><h4>Switches &amp; Routers</h4><p>Networking equipment in bulk.</p></a>
+    <a href="service-printers.html" class="other-card"><h4>Printers &amp; Scanners</h4><p>Office printing equipment in bulk.</p></a>
+  </div>
+</section>
+
+<div style="background:var(--dark);padding:60px 6%;text-align:center;">
+  <h2 style="font-family:'Rajdhani',sans-serif;font-size:clamp(1.8rem,4vw,2.4rem);font-weight:700;color:#fff;margin-bottom:12px;">Have Bulk Equipment to Sell?</h2>
+  <p style="color:#8a9a8e;margin-bottom:2rem;max-width:440px;margin-left:auto;margin-right:auto;">Contact us today. Fast quotes, best market rates, and same-day pickup available.</p>
+  <a href="contact.html" class="btn-primary">Get a Free Quote</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:2rem;">
+    <!-- Column 1: Info (Left side) -->
+    <div class="footer-col" style="display:flex; flex-direction:column; gap:1.5rem; grid-column: span 2;">
+      <div class="footer-brand"><a href="index.html" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+  <img src="Images/logo.png" alt="S.T.E General Trading LLC Logo" style="max-height: 55px; width: auto;" />
+</a></div>
+      <p style="color:var(--muted);font-size:0.9rem;line-height:1.6;margin-bottom:0;">S.T.E General Trading LLC is a premier electronic scrap and bulk IT equipment buyer operating globally with deep roots in the UAE.</p>
+      <ul class="footer-links" style="display:flex; flex-direction:column; gap:8px;">
+        <li style="display:flex; gap:10px;"><i class="fas fa-map-marker-alt" style="color:var(--green); margin-top:4px;"></i> <span>Office 321, ECC Building Industrial Area 3 Sharjah, United Arab Emirates.</span></li>
+        <li style="display:flex; gap:10px;"><i class="fas fa-envelope" style="color:var(--green); margin-top:4px;"></i> <a href="mailto:stegeneraltrading@gmail.com">stegeneraltrading@gmail.com</a></li>
+        <li style="display:flex; gap:10px; margin-top:6px;"><img src="https://flagcdn.com/16x12/ae.png" alt="UAE" style="margin-top:4px;"> <span><strong>UAE:</strong> <a href="tel:+971502262300">+971 50 226 2300</a></span></li>
+        <li style="display:flex; gap:10px;"><img src="https://flagcdn.com/16x12/sg.png" alt="SG" style="margin-top:4px;"> <span><strong>Singapore:</strong> <a href="tel:+6598688702">+65 9868 8702</a></span></li>
+        <li style="display:flex; gap:10px;"><img src="https://flagcdn.com/16x12/pk.png" alt="PK" style="margin-top:4px;"> <span><strong>Pakistan:</strong> <a href="tel:+923332262224">+92 333 226 2224</a></span></li>
+      </ul>
+      <div class="social-links" style="display:flex; gap:15px; margin-top:5px;">
+        <a href="https://www.facebook.com/profile.php?id=61558077696163" target="_blank" style="color:var(--green);font-size:1.2rem;"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/stegeneraltrading?igsh=MWJrajJzOHhoN3BrZA%3D%3D" target="_blank" style="color:var(--green);font-size:1.2rem;"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    
+    <!-- Column 2: Services -->
+    <div class="footer-col">
+      <h4 style="margin-bottom:1.2rem; font-family:'Rajdhani',sans-serif; font-size:1.2rem;">Services</h4>
+      <ul class="footer-links" style="display:flex; flex-direction:column; gap:10px;">
+        <li><a href="service-laptop.html">Laptop Scrap</a></li>
+        <li><a href="service-camera.html">Camera Scrap</a></li>
+        <li><a href="service-desktop.html">Desktop Scrap</a></li>
+        <li><a href="service-mobile.html">Mobile Phone Scrap</a></li>
+        <li><a href="service-server.html">Network Server Scrap</a></li>
+        <li><a href="service-printers.html">Printer Scrap</a></li>
+        <li><a href="service-switches.html">Switch Scrap</a></li>
+        <li><a href="service-tablet.html">Tablet Scrap</a></li>
+        <li><a href="service-cpu.html">CPU Scrap</a></li>
+        <li><a href="service-harddisk.html">Hard Disk Scrap</a></li>
+        <li><a href="service-tv.html">TV Scrap</a></li>
+        <li><a href="service-ewaste.html">E-Waste Scrap</a></li>
+      </ul>
+    </div>
+    
+    <!-- Column 3: Locations -->
+    <div class="footer-col">
+      <h4 style="margin-bottom:1.2rem; font-family:'Rajdhani',sans-serif; font-size:1.2rem;">Locations</h4>
+      <ul class="footer-links" style="display:flex; flex-direction:column; gap:10px;">
+        <li><a href="#">Scrap Buyer Near Me</a></li>
+        <li><a href="#">Scrap Buyer in Sharjah</a></li>
+        <li><a href="#">Scrap Buyers Abu Dhabi</a></li>
+        <li><a href="#">Scrap Buyer in Al Quoz</a></li>
+        <li><a href="#">Scrap Buyer in Jebel Ali</a></li>
+        <li><a href="#">Scrap Buyer in Mussafah</a></li>
+        <li><a href="#">Scrap Buyers in Ajman</a></li>
+        <li><a href="#">Scrap Buyers in Ras Al Khaimah</a></li>
+        <li><a href="#">Scrap Buyers in Fujairah</a></li>
+        <li><a href="#">Scrap Buyers in Dubai</a></li>
+      </ul>
+    </div>
+    
+    <!-- Column 4: Quick Links -->
+    <div class="footer-col">
+      <h4 style="margin-bottom:1.2rem; font-family:'Rajdhani',sans-serif; font-size:1.2rem;">Quick Links</h4>
+      <ul class="footer-links" style="display:flex; flex-direction:column; gap:10px;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">All Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="footer-bottom" style="border-top:1px solid var(--border); padding-top:1.5rem; margin-top:2rem; text-align:center; display:flex; flex-direction:column; gap:5px;">
+    <span style="font-size:0.9rem; color:var(--muted);">&copy; 2026 S.T.E General Trading LLC. All rights reserved.</span>
+    <span style="font-size:0.85rem; color:var(--muted);">Office 321, ECC Building Industrial Area 3 Sharjah, UAE</span>
+  </div>
+  <style>
+    @media(max-width: 900px) {
+      .footer-grid { grid-template-columns: 1fr 1fr !important; }
+      .footer-col:first-child { grid-column: span 2 !important; }
+    }
+    @media(max-width: 580px) {
+      .footer-grid { grid-template-columns: 1fr !important; }
+      .footer-col:first-child { grid-column: span 1 !important; }
+    }
+  </style>
+</footer>
+</div>
+<a href="https://wa.me/6598688702" class="wa-fab" target="_blank"><svg viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 2C6.477 2 2 6.484 2 12.017c0 1.99.524 3.859 1.44 5.478L2 22l4.656-1.404A9.979 9.979 0 0012 22c5.522 0 10-4.481 10-10.003C22 6.484 17.522 2 11.999 2zm0 18.338a8.327 8.327 0 01-4.519-1.327l-.323-.196-3.379 1.018.974-3.404-.21-.348A8.348 8.348 0 013.663 12c0-4.6 3.74-8.338 8.336-8.338 4.595 0 8.335 3.738 8.335 8.338 0 4.601-3.74 8.338-8.335 8.338z"/></svg></a>
+<script src="main.js"></script>
+</body></html>
