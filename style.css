@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -111,6 +111,7 @@ nav.scrolled { position: fixed; top: 0; height: 60px; box-shadow: 0 2px 16px rgb
   letter-spacing: 0.3px;
   transition: background 0.15s, color 0.15s;
   text-transform: none;
+  white-space: nowrap;
 }
 .dropdown-menu a:hover { background: var(--green-pale); color: var(--green); }
 .dropdown-menu a::after { display: none !important; }
